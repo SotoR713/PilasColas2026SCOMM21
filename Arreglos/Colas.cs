@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace arregloColas
+﻿namespace arregloColas
 {
     internal class Colas
     {
@@ -62,15 +58,18 @@ namespace arregloColas
 
             for (int i = _inicio; i == _final; i++)
 
-            {        if (i == _Max) {  i = 0; }
+            {
+                if (i == _Max)
+                { i = 0; }
                 
-                
-            
+
+
                 datos += _arregloCola[i];   // datos = datos + _arregloCola[i] funciona igual
-                if (i < (_Max - 1))
+                if (i < (_final - 1))
                 {
                     datos += ",";       //mejorarlo con interpolacion de texto
                 }
+
             }
 
 
