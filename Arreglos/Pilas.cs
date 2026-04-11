@@ -44,6 +44,9 @@
         public string ObtenerDatos()
         {
             string datos = string.Empty;
+            
+            //var list = _arreglo.Where(s => !string.IsNullOrEmpty(s)).ToList();
+            //datos = string.Join(",", list);
 
             for (int i = 0; i < _tope; i++)
             {
@@ -53,8 +56,11 @@
                     datos += ",";       //mejorarlo con interpolacion de texto
                 }
             }
+
+
             return datos;
         }
+
 
     }
 }

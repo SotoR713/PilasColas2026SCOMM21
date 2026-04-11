@@ -1,4 +1,6 @@
-﻿namespace Arreglos
+﻿using arregloColas;
+
+namespace Arreglos
 {
     internal class Program
     {
@@ -6,29 +8,29 @@
         {
             try
             {
-                Pilas pila = new Pilas(5);
+                Colas cola = new Colas(5);
 
-                pila.Agregar("A");
-                pila.Agregar("B");
-                pila.Agregar("C");
+                cola.Agregar("A");
+                cola.Agregar("B");
+                cola.Agregar("C");
 
-                Console.WriteLine(pila.ObtenerDatos());
+                //Console.WriteLine(cola.ObtenerDatos());
 
-                pila.Agregar("D");
-                Console.WriteLine("Agregando D");
-                Console.WriteLine(pila.ObtenerDatos());
-                Console.WriteLine("Eliminando D");
-                pila.Eliminar();
-                Console.WriteLine(pila.ObtenerDatos());
-                Console.WriteLine("Eliminando C");
-                pila.Eliminar();
+                //cola.Agregar("D");
+                //Console.WriteLine("Agregando D");
+                //Console.WriteLine(cola.ObtenerDatos());
+                //Console.WriteLine("Eliminando D");
+                //cola.Eliminar();
+                //Console.WriteLine(cola.ObtenerDatos());
+                //Console.WriteLine("Eliminando C");
+                //cola.Eliminar();
 
-                //Agregando problemas
-                //pila.Agregar("");
-                pila.Eliminar();
-                pila.Eliminar();
-                pila.Eliminar();
-                Console.WriteLine(pila.ObtenerDatos());
+                ////Agregando problemas
+                ////cola.Agregar("");
+                //cola.Eliminar();
+                //cola.Eliminar();
+                //cola.Eliminar();
+                //Console.WriteLine(cola.ObtenerDatos());
             }
             catch (Exception ex)
             {
