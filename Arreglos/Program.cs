@@ -14,28 +14,36 @@ namespace Arreglos
                 cola.Agregar("B");
                 cola.Agregar("C");
 
-                //Console.WriteLine(cola.ObtenerDatos());
+                Console.WriteLine(cola.ObtenerDatos());
 
-                //cola.Agregar("D");
-                //Console.WriteLine("Agregando D");
-                //Console.WriteLine(cola.ObtenerDatos());
-                //Console.WriteLine("Eliminando D");
-                //cola.Eliminar();
-                //Console.WriteLine(cola.ObtenerDatos());
-                //Console.WriteLine("Eliminando C");
-                //cola.Eliminar();
+                cola.Agregar("D");
+                cola.Agregar("E");
+                Console.WriteLine(cola.ObtenerDatos());
 
-                ////Agregando problemas
-                ////cola.Agregar("");
-                //cola.Eliminar();
-                //cola.Eliminar();
-                //cola.Eliminar();
-                //Console.WriteLine(cola.ObtenerDatos());
+                cola.Agregar("F");
+                Console.WriteLine(cola.ObtenerDatos());
+                Console.WriteLine("Agregando D");
+                Console.WriteLine(cola.ObtenerDatos());
+                Console.WriteLine("Eliminando A");
+                cola.Eliminar();
+                Console.WriteLine(cola.ObtenerDatos());
+                Console.WriteLine("Eliminando B");
+                cola.Eliminar();
+                Console.WriteLine(cola.ObtenerDatos());
+
+                //Agregando problemas
+                //cola.Agregar("");
+                Console.WriteLine("Eliminando Todo");
+                cola.Eliminar();
+                cola.Eliminar();
+                Console.WriteLine(cola.ObtenerDatos());
+                cola.Eliminar();
+                Console.WriteLine(cola.ObtenerDatos());
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
-        }
+         }
     }
 }

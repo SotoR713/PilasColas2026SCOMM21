@@ -22,17 +22,18 @@
             }
 
 
-            if (_final == _Max)
+            if (_final == _Max )
             { _final = 0; }
 
 
-            //if (_final == _inicio + 1)
-            //{
-            //    throw new Exception("Cola llena");
-            //}
+            if (_final + 1 == _inicio || _final != 0 && _inicio != 0 )
+            {
+                throw new Exception("Cola llena");
+            }
 
             _arregloCola[_final] = elemento;
             _final++;
+
         }
 
 
@@ -43,11 +44,13 @@
                 throw new Exception("Cola vacia");
             }
 
-            if (_inicio == _Max)
-            { _inicio = 0; }
+
 
             _arregloCola[_inicio] = "";
             _inicio++;
+
+            if (_inicio == _Max)
+            { _inicio = 0; }
 
         }
 
@@ -56,7 +59,7 @@
             string datos = string.Empty;
 
 
-            for (int i = _inicio; i == _final; i++)
+            for (int i = _inicio; i != _final; i++)
 
             {
                 if (i == _Max)
